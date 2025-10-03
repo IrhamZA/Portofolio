@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio Pixel Art — Irham Zubaidi Alhuda</title>
+
+  <!-- Pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk ikon sosial (opsional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">Irham Zubaidi Alhuda</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Abouts</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / HOME -->
+    <section id="home" class="hero" aria-label="Home">
+      <div class="hero-inner">
+        <div class="hero-title">Informatics Engineering | Aspiring Game Development</div>
+        <div class="hero-sub">Welcome to My Profile</div>
+        <div class="hero-buttons">
+          <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
+          <button class="btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contacts</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-label="About Me">
+      <div class="section-title">About Me</div>
+      <div class="about-inner">
+        <div class="avatar" role="img" aria-label="Avatar Pixel"></div>
+        <p>
+          Hello! I am <strong>Irham Zubaidi Alhuda</strong>, An Informatics student interested in game development, particularly programming 
+          and 3D design. Currently exploring various tools and software to support comprehensive game development, from concept to visuals.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skills" class="skill-section" aria-label="skill">
+      <div class="section-title">Skills</div>
+
+      <div class="skills-grid" role="list">
+        <div class="skill-item" data-title="HTML" role="listitem">
+          <div class="icon" aria-hidden="true"><i class="fa-brands fa-html5"></i></div>
+        </div>
+
+        <div class="skill-item" data-title="CSS" role="listitem">
+          <div class="icon" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i></div>
+        </div>
+
+        <div class="skill-item" data-title="JavaScript" role="listitem" >
+          <div class="icon" aria-hidden="true"><i class="fa-brands fa-js"></i></div>
+        </div>
+
+        <div class="skill-item" data-title="Python" role="listitem">
+          <div class="icon" aria-hidden="true"><i class="fa-brands fa-python"></i></div>
+        </div>
+
+        <div class="skill-item" data-title="Godot" role="listitem">
+          <div class="icon" aria-hidden="true"><img src="Images/icon.png" width="60px" ></div>
+        </div>
+
+        <div class="skill-item" data-title="Blender" role="listitem">
+          <div class="icon" aria-hidden="true"><img src="Images/blender_icon_128x128.png" width="60px" ></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section" aria-label="Proyek">
+      <div class="section-title">Projects</div>
+
+      <div class="projects-grid">
+        <article class="project-card" aria-labelledby="p1-title">
+          <h3 id="p1-title">Mini Platform Game</h3>
+          <p>Prototype Platform 2D pixel sederhana menggunakan Godot Engine. Sedang dikembangkan lebih lanjut.</p>
+        </article>
+
+        <article class="project-card" aria-labelledby="p2-title">
+          <h3 id="p2-title">3D Ice Cream</h3>
+          <p>3D Design Ice Cream menggunakan Blender.</p>
+        </article>
+
+        <article class="project-card" aria-labelledby="p3-title">
+          <h3 id="p3-title">Website Portofolio</h3>
+          <p>Desain portofolio ini: HTML + CSS (pixel-art theme). Sedang dikembangkan lebih lanjut.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" aria-label="Kontak">
+    <div class="social">
+      <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yourusername" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:youremail@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div style="font-size:10px;color:var(--text)">&copy; 2025 Irham Zubaidi Alhuda | Made with Pixel Spirit</div>
+  </footer>
+
+  <!-- JS
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const target = a.getAttribute('href');
+      if(target.length>1){
+        e.preventDefault();
+        const el = document.querySelector(target);
+        if(el) el.scrollIntoView({behavior:'smooth'});
+      }
+    });
+  });
+  </script> -->
+</body>
+</html>
